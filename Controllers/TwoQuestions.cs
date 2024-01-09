@@ -12,7 +12,7 @@ public class TwoQuestions
         TQuestions = tQuestions;
     }
     [HttpGet]
-    [Route("/TwoQuestions/{Name}/{WakeUpTime}")]    
+    [Route("/TwoQuestions/{name}/{wakeUpTime}")]    
     public string twoQuestions(string name, int wakeUpTime)
     {
         return TQuestions.twoQuestions(name, wakeUpTime);
