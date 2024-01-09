@@ -1,20 +1,23 @@
+using Fooa_MiniChallenge2_towtofour.Service.numbers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Fooa_MiniChallenge2_towtofour.Controllers;
 [ApiController]
 [Route("[controller]")]
-
 public class TwoQuestions
 {
-    public TwoQuestions()
+    public iTQuestions TQuestions { get; }
+    public TwoQuestions(iTQuestions tQuestions)
     {
-        [HttpPost]
-        [Route("TwoQustions/{Name}/{WakeUpTime}")]
-        
-        string TwoQuestions(string name, string wakeUpTime){
-            return $"your name is {name} and you woke up at {wakeUpTime}";
-        }
+        TQuestions = tQuestions;
     }
-    
+    [HttpGet]
+    [Route("/{Name}/{WakeUpTime}")]
+
+    public string twoQuestions(string name, string wakeUpTime)
+    {
+        return twoQuestions(name, wakeUpTime);
+    }
+
 
 }

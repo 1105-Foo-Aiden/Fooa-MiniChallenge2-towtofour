@@ -1,20 +1,22 @@
-using System.Security.Cryptography.X509Certificates;
+using Fooa_MiniChallenge2_towtofour.Service.numbers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Fooa_MiniChallenge2_towtofour.Controllers;
 [ApiController]
 [Route("[controller]")]
+
 public class MainController
 {
-    public MainController()
+    public iAddNum AddNum { get; }
+    public MainController(iAddNum addNum)
     {
-        [HttpPost]
-        [Route("/AddNumbers/{num1}/{num2}")]
-        
-        string addNumbers(double num1, double num2)
-        {
-            double num3 = num1 + num2;
-            return $"The sum of {num1} and {num2} is {num3}";
-        }
+        AddNum = addNum;
     }
+    [HttpGet]
+    [Route("/AddNumbers/{num1}/{num2}")]
+    public string AddNumbers(double num1, double num2)
+    {
+        return AddNumbers(num1, num2);
+    }
+
 }

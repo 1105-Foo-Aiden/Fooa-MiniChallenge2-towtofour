@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Fooa-MiniChallenge2-towtofour.props" />
+</Project>

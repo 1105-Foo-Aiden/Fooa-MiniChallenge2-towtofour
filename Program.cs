@@ -1,3 +1,5 @@
+using Fooa_MiniChallenge2_towtofour.Service.numbers;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +8,9 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<iTQuestions, TQuestions>();
+builder.Services.AddScoped<iAddNum, AddNum>();
+builder.Services.AddScoped<iGTLT, GTLT>();
 
 var app = builder.Build();
 

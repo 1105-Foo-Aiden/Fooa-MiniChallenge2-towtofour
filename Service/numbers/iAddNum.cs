@@ -1,6 +1,6 @@
 namespace Fooa_MiniChallenge2_towtofour.Service.numbers;
 
-public interface iAddNum
+public interface iAddNum 
 {
-    string addNumbers(double num1, double num2);
+    public string addNumbers(double num1, double num2);
 }
