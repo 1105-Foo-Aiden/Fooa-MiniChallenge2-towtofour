@@ -1,7 +1,5 @@
 using Fooa_MiniChallenge2_towtofour.Service.numbers;
 using Microsoft.AspNetCore.Mvc;
-
-
 namespace Fooa_MiniChallenge2_towtofour.Controllers;
 [ApiController]
 [Route("[controller]")]
@@ -12,7 +10,6 @@ public class GreaterThanLessThan
     {
         GTLT = gTLT;
     }
-
     [HttpGet]
     [Route("/CompareNumbers/{num1}/{num2}")]
     public string CompareNumbers(double num1, double num2)

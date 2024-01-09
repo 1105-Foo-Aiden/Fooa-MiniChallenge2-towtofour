@@ -1,5 +1,4 @@
 namespace Fooa_MiniChallenge2_towtofour.Service.numbers;
-
 public class GTLT : iGTLT
 {
     public string CompareNumbers(double num1, double num2)

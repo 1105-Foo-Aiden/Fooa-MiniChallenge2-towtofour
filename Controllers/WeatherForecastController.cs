@@ -1,7 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-
 namespace Fooa_MiniChallenge2_towtofour.Controllers;
-
 [ApiController]
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
