@@ -13,15 +13,10 @@ public class GreaterThanLessThan
         GTLT = gTLT;
     }
 
-
     [HttpGet]
     [Route("/CompareNumbers/{num1}/{num2}")]
     public string CompareNumbers(double num1, double num2)
     {
         return GTLT.CompareNumbers(num1, num2);
     }
-
-
-
-
 }

@@ -7,16 +7,17 @@ namespace Fooa_MiniChallenge2_towtofour.Controllers;
 
 public class MainController
 {
-    public iAddNum AddNum { get; }
+    public readonly iAddNum AddNum;
     public MainController(iAddNum addNum)
     {
-        AddNum = addNum;
+      AddNum = addNum;
     }
     [HttpGet]
     [Route("/AddNumbers/{num1}/{num2}")]
-    public string AddNumbers(int num1, int num2)
+    
+    public string AddNumbers(double num1, double num2)
     {
-        return AddNumbers(num1, num2);
+        return AddNum.AddNumbers(num1, num2);
     }
 
 }

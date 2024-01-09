@@ -4,19 +4,20 @@ using Microsoft.AspNetCore.Mvc;
 namespace Fooa_MiniChallenge2_towtofour.Controllers;
 [ApiController]
 [Route("[controller]")]
+
 public class TwoQuestions
 {
-    public iTQuestions TQuestions { get; }
+    public readonly iTQuestions TQuestions;
     public TwoQuestions(iTQuestions tQuestions)
     {
         TQuestions = tQuestions;
     }
     [HttpGet]
-    [Route("/{Name}/{WakeUpTime}")]
+    [Route("/TwoQuestions/{Name}/{WakeUpTime}")]
 
-    public string twoQuestions(string name, string wakeUpTime)
+    public string twoQuestions(string name, int wakeUpTime)
     {
-        return twoQuestions(name, wakeUpTime);
+        return TQuestions.twoQuestions(name, wakeUpTime);
     }
 
 
