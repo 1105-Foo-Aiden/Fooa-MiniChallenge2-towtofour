@@ -14,7 +14,7 @@ public class MainController
     }
     [HttpGet]
     [Route("/AddNumbers/{num1}/{num2}")]
-    public string AddNumbers(double num1, double num2)
+    public string AddNumbers(int num1, int num2)
     {
         return AddNumbers(num1, num2);
     }
