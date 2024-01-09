@@ -4,4 +4,4 @@
 ## I used what we learned in leacture to create 3 different interfaces with different services and code for each one.
 
 ## Peer Reviewer: Mike Heckerman
-## Peer Review: Code looks clean. All the end points work. Checked them on postman and swagger, they work.
+## Peer Review: TQuestions.cs needs wakeup time needs to be <= not < | TwoQuestions.cs needs wakeup to start with a lowercase w. These are the only changes that I found. 
