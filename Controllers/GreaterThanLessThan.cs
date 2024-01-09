@@ -6,6 +6,7 @@ namespace Fooa_MiniChallenge2_towtofour.Controllers;
 [Route("[controller]")]
 public class GreaterThanLessThan
 {
+    [HttpPost]
     [Route("/CompareNumbers/{num1}/{num2}")]
     string CompareNumbers(double num1, double num2){
         if(num1 > num2){
